@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Millennium Store | Elegância que veste você</title>
+    <meta name="description" content="Millennium Store - Bolsas, roupas e sapatos selecionados para mulheres elegantes.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo-black.png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo">
+                    <img src="images/logo-black.png" alt="Millennium Store" class="logo-img">
+                </a>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#inicio" class="nav-link">Início</a></li>
+                    <li><a href="#colecao" class="nav-link">Coleção</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+                
+                <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-image">
+            <img src="images/hero.jpg" alt="Elegância Millennium">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title reveal-text">Elegância que veste você</h1>
+            <p class="hero-subtitle reveal-text">Bolsas, roupas e sapatos selecionados</p>
+            <a href="#colecao" class="btn btn-primary reveal-text">Ver Coleção</a>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- Destaques Section -->
+    <section class="destaques section" id="colecao">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Coleção Exclusiva</span>
+                <h2 class="section-title">Produtos em Destaque</h2>
+                <p class="section-subtitle">Peças cuidadosamente selecionadas para você</p>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card" data-product="Bolsa Elegance">
+                    <div class="product-image">
+                        <img src="images/product-bolsa.jpg" alt="Bolsa Elegance">
+                        <div class="product-overlay">
+                            <button class="btn btn-buy" onclick="comprar('Bolsa Elegance')">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Bolsa Elegance</h3>
+                        <p class="product-category">Bolsas</p>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-product="Scarpin Nude">
+                    <div class="product-image">
+                        <img src="images/product-sapato.jpg" alt="Scarpin Nude">
+                        <div class="product-overlay">
+                            <button class="btn btn-buy" onclick="comprar('Scarpin Nude')">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Scarpin Nude</h3>
+                        <p class="product-category">Sapatos</p>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-product="Blusa Seda Premium">
+                    <div class="product-image">
+                        <img src="images/product-roupa.jpg" alt="Blusa Seda Premium">
+                        <div class="product-overlay">
+                            <button class="btn btn-buy" onclick="comprar('Blusa Seda Premium')">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Blusa Seda Premium</h3>
+                        <p class="product-category">Roupas</p>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-product="Crossbody Black">
+                    <div class="product-image">
+                        <img src="images/product-bolsa2.jpg" alt="Crossbody Black">
+                        <div class="product-overlay">
+                            <button class="btn btn-buy" onclick="comprar('Crossbody Black')">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Crossbody Black</h3>
+                        <p class="product-category">Bolsas</p>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-product="Ankle Boot Classic">
+                    <div class="product-image">
+                        <img src="images/product-sapato2.jpg" alt="Ankle Boot Classic">
+                        <div class="product-overlay">
+                            <button class="btn btn-buy" onclick="comprar('Ankle Boot Classic')">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Ankle Boot Classic</h3>
+                        <p class="product-category">Sapatos</p>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-product="Blazer Sophisticated">
+                    <div class="product-image">
+                        <img src="images/product-roupa2.jpg" alt="Blazer Sophisticated">
+                        <div class="product-overlay">
+                            <button class="btn btn-buy" onclick="comprar('Blazer Sophisticated')">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Blazer Sophisticated</h3>
+                        <p class="product-category">Roupas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorias Section -->
+    <section class="categorias section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Explore</span>
+                <h2 class="section-title">Nossas Categorias</h2>
+            </div>
+            
+            <div class="categories-grid">
+                <a href="#colecao" class="category-card" onclick="filtrarCategoria('bolsas')">
+                    <div class="category-image">
+                        <img src="images/categoria-bolsas.jpg" alt="Bolsas">
+                        <div class="category-overlay"></div>
+                    </div>
+                    <div class="category-content">
+                        <h3 class="category-name">Bolsas</h3>
+                        <span class="category-link">Ver coleção</span>
+                    </div>
+                </a>
+                
+                <a href="#colecao" class="category-card" onclick="filtrarCategoria('roupas')">
+                    <div class="category-image">
+                        <img src="images/categoria-roupas.jpg" alt="Roupas">
+                        <div class="category-overlay"></div>
+                    </div>
+                    <div class="category-content">
+                        <h3 class="category-name">Roupas</h3>
+                        <span class="category-link">Ver coleção</span>
+                    </div>
+                </a>
+                
+                <a href="#colecao" class="category-card" onclick="filtrarCategoria('sapatos')">
+                    <div class="category-image">
+                        <img src="images/categoria-sapatos.jpg" alt="Sapatos">
+                        <div class="category-overlay"></div>
+                    </div>
+                    <div class="category-content">
+                        <h3 class="category-name">Sapatos</h3>
+                        <span class="category-link">Ver coleção</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section class="sobre section" id="sobre">
+        <div class="container">
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <span class="section-tag">Sobre Nós</span>
+                    <h2 class="section-title">A Arte de se Vestir Bem</h2>
+                    <p class="sobre-description">
+                        A Millennium Store nasceu da paixão por moda e da crença de que cada mulher merece se sentir 
+                        poderosa e elegante. Selecionamos cada peça com cuidado, buscando exclusividade, qualidade 
+                        e aquele toque especial que transforma o ordinário em extraordinário.
+                    </p>
+                    <p class="sobre-description">
+                        Nossa curadoria é pensada para mulheres que valorizam o estilo atemporal, que entendem 
+                        que a verdadeira elegância está nos detalhes e que a autoestima se reflete na forma 
+                        como nos apresentamos ao mundo.
+                    </p>
+                    <div class="sobre-values">
+                        <div class="value-item">
+                            <span class="value-number">01</span>
+                            <h4>Exclusividade</h4>
+                            <p>Peças selecionadas com rigor</p>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-number">02</span>
+                            <h4>Qualidade</h4>
+                            <p>Materiais premium e acabamento impecável</p>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-number">03</span>
+                            <h4>Estilo</h4>
+                            <p>Elegância que transcende tendências</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lookbook Section -->
+    <section class="lookbook section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Inspire-se</span>
+                <h2 class="section-title">Lookbook</h2>
+                <p class="section-subtitle">Siga-nos no Instagram @millenniumboutique</p>
+            </div>
+            
+            <div class="lookbook-grid">
+                <div class="lookbook-item">
+                    <img src="images/lookbook-1.jpg" alt="Lookbook 1">
+                    <div class="lookbook-overlay">
+                        <svg class="instagram-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </div>
+                </div>
+                <div class="lookbook-item">
+                    <img src="images/lookbook-2.jpg" alt="Lookbook 2">
+                    <div class="lookbook-overlay">
+                        <svg class="instagram-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </div>
+                </div>
+                <div class="lookbook-item">
+                    <img src="images/lookbook-3.jpg" alt="Lookbook 3">
+                    <div class="lookbook-overlay">
+                        <svg class="instagram-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </div>
+                </div>
+                <div class="lookbook-item">
+                    <img src="images/lookbook-4.jpg" alt="Lookbook 4">
+                    <div class="lookbook-overlay">
+                        <svg class="instagram-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </div>
+                </div>
+                <div class="lookbook-item">
+                    <img src="images/lookbook-5.jpg" alt="Lookbook 5">
+                    <div class="lookbook-overlay">
+                        <svg class="instagram-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </div>
+                </div>
+                <div class="lookbook-item">
+                    <img src="images/lookbook-6.jpg" alt="Lookbook 6">
+                    <div class="lookbook-overlay">
+                        <svg class="instagram-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section class="contato section" id="contato">
+        <div class="container">
+            <div class="contato-content">
+                <div class="contato-text">
+                    <span class="section-tag">Fale Conosco</span>
+                    <h2 class="section-title">Estamos aqui para você</h2>
+                    <p class="contato-description">
+                        Tire suas dúvidas, faça seu pedido ou simplesmente venha bater um papo sobre moda. 
+                        Adoramos conhecer nossas clientes!
+                    </p>
+                </div>
+                
+                <div class="contato-actions">
+                    <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20produtos%20da%20Millennium%20Store." 
+                       class="btn btn-whatsapp-large" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                        </svg>
+                        Falar no WhatsApp
+                    </a>
+                    
+                    <a href="https://instagram.com/millenniumboutique" class="btn btn-instagram" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                        Seguir no Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo-black.png" alt="Millennium Store">
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#inicio">Início</a>
+                    <a href="#colecao">Coleção</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#contato">Contato</a>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="https://instagram.com/millenniumboutique" target="_blank" rel="noopener" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" aria-label="WhatsApp">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Millennium Store. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20produtos%20da%20Millennium%20Store." 
+       class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
